@@ -1,0 +1,214 @@
+.storeSalesWrapper{
+    padding: 8px 10px;
+
+    .tableHeaderTitle{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex: 0 0 100%;
+
+        .left{
+            flex: 0 0 50%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            input[type=search]{
+                border: 1px solid #eee;
+                border-radius: 10px;
+                padding: 8px 8px;
+                background-color: #fff;
+                width: 300px;
+            }
+    
+            p{
+                color: #555;
+                font-size: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .right{
+            flex: 0 0 50%;
+            text-align: right;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left: auto;
+            justify-content: flex-end;
+
+            > div {
+                display: flex;
+                margin-left: 10px;
+                
+                button{
+                    background-color: transparent;
+                    color: #555;
+                    border: none;
+                    padding: 4px 8px;
+                    text-transform: capitalize;
+                }
+                .filterIcon{
+                    background-color: #fff;
+                    box-shadow: 0px 0px 6px rgba(174, 174, 174, 0.537);
+                    padding: 4px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 28px;
+                    border-radius: 6px;
+                    svg{
+                        color: #2A85FF;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .dateFilter{
+                position: relative;
+                
+                button{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+    }
+
+    
+
+    .dataTableComponentWrapper{
+        width: 100%;
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    
+        .tableBtn{
+            width: 100%;
+            button{
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                margin-right: 8px;
+                padding: 4px 6px;
+                font-size: 18px;
+                background-color: #F5F5F5;
+            }
+    
+    
+            button:nth-child(2){
+                color: #FE1F1F;
+            }
+        }
+    }
+    
+    
+}
+
+.datePicker{
+    width: 100%;
+}
+
+@media (min-width:200px) and (max-width:769px){
+    .storeSalesWrapper{
+        max-width: 100% !important;
+
+        .tableHeaderTitle{
+            flex: 0 0 100%;
+    
+            .left{
+                flex: 0 0 100%;
+                justify-content: space-between;
+    
+                input[type=search]{
+                    width: 100%;
+                    flex: 0 0 50%;
+                }
+        
+                p{
+                    margin-right: 0px;
+                    flex: 0 0 40%;
+                }
+            }
+    
+            .right{
+                flex: 0 0 100%;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-left: auto;
+                justify-content: center;
+    
+                > div {
+                    display: flex;
+                    margin-left: 10px;
+                    
+                    button{
+                        background-color: transparent;
+                        color: #555;
+                        border: none;
+                        padding: 4px 8px;
+                        text-transform: capitalize;
+                    }
+                    .filterIcon{
+                        background-color: #fff;
+                        box-shadow: 0px 0px 6px rgba(174, 174, 174, 0.537);
+                        padding: 4px;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 28px;
+                        border-radius: 6px;
+                        svg{
+                            color: #2A85FF;
+                            font-size: 20px;
+                        }
+                    }
+                }
+    
+                .dateFilter{
+                    position: relative;
+                    
+                    button{
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+            
+        }
+    
+        
+    
+        .dataTableComponentWrapper{
+            width: 100%;
+    
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        
+            .tableBtn{
+                width: 100%;
+                button{
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    margin-right: 8px;
+                    padding: 4px 6px;
+                    font-size: 18px;
+                    background-color: #F5F5F5;
+                }
+        
+        
+                button:nth-child(2){
+                    color: #FE1F1F;
+                }
+            }
+        }
+        
+        
+    }
+}

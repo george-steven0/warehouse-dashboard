@@ -1,0 +1,138 @@
+/* Sass */
+$defaultMargin : 15px;
+$defaultBorderRadius : 12px ;
+$defaultColor : #2A85FF;
+$dafaultTransition : all .3s ease-in-out;
+$fontColor : #555;
+/* Sass */
+
+.reportsWrapper{
+    padding: 10px;
+
+    .mainContentWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .sideNav{
+            flex: 0 0 15%;
+            max-width: 15%;
+            transition: $dafaultTransition;
+            height: 100vh;
+        }
+
+        .miniSideNav{
+            overflow: hidden;
+            max-width: 37px;
+            flex: 0 0 3%;
+            text-align: center;
+
+            ul{
+                li{
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .mainContentContainer{
+            flex: 0 0 84%;
+            transition: $dafaultTransition;
+
+            .reportContentWrapper{
+
+                .title{
+                    margin-bottom: 20px;
+
+                    p{
+                        font-size: 25px;
+                        color: #555;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                    }
+                }
+
+                .reportCardWrapper{
+                    display: grid;
+                    grid-template-columns: 18% 18% 18%;
+                    align-items: flex-start;
+                    justify-items: flex-start;
+                    gap: 65px;
+                    .reportCard{
+                        width: 100%;
+                        min-height: 190px;
+                        padding: 25px;
+                        background-color: #FCFCFC;
+                        text-align: center;
+                        box-shadow: 10px 10px 15px -15px rgb(72, 72, 72);
+                        border-radius: 10px;
+                        text-transform: capitalize;
+                        color: #555;
+                        text-decoration: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        p{
+                            margin: 0px;
+                            margin-bottom: 5px;
+                        }
+                        .icon{
+                            font-size: 45px;
+                        }
+
+                        .title{
+                            font-size: 16px;
+                            color: rgb(112, 112, 112);
+                        }
+                    }
+                }
+            }
+        }
+
+        .mainContentContainerFull{
+            flex: 0 0 96%;
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:1169px){
+    .reportsWrapper{
+    
+        .mainContentWrapper{
+    
+            .mainContentContainer{
+                flex: 0 0 84%;
+                transition: $dafaultTransition;
+    
+                .reportContentWrapper{
+    
+                    .title{
+                        margin-bottom: 20px;
+    
+                        p{
+                            font-size: 25px;
+                            color: #555;
+                            text-transform: capitalize;
+                            font-weight: 600;
+                        }
+                    }
+    
+                    .reportCardWrapper{
+                        display: grid;
+                        grid-template-columns: 47% 47%;
+                        align-items: flex-start;
+                        justify-items: flex-start;
+                        gap: 25px;
+                        
+                    }
+                }
+            }
+    
+            .mainContentContainerFull{
+                flex: 0 0 96%;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+.MuiTabPanel-root {
+    padding: 0px !important;
+}
+.loginWrapper form{
+    width:965px;
+    margin: 100px auto;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.512);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.loginWrapper form > div{
+    flex: 0 0 45%;
+}
+.loginWrapper form > div:last-child{
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+.loginWrapper form div label{
+    display: block;
+    margin-bottom: 10px;
+}
+.loginWrapper form div input{
+    padding: 8px 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+}
+.loginWrapper form div input:focus{
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 6px 1px rgba(59, 122, 204, 0.74);
+}
+.loginWrapper form > div:last-child button{
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: teal;
+    cursor: pointer;
+    color: #fff;
+}

@@ -1,0 +1,207 @@
+/* Sass */
+$defaultMargin : 15px;
+$defaultBorderRadius : 12px ;
+$defaultColor : #2A85FF;
+$dafaultTransition : all .3s ease-in-out;
+$fontColor : #555;
+/* Sass */
+
+.sellersWrapper{
+    padding: 10px;
+
+    .mainContentWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .sideNav{
+            flex: 0 0 15%;
+            max-width: 15%;
+            transition: $dafaultTransition;
+            height: 100%;
+        }
+
+        .miniSideNav{
+            overflow: hidden;
+            max-width: 37px;
+            flex: 0 0 3%;
+            text-align: center;
+            
+            ul{
+                li{
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .mainContentContainer{
+            flex: 0 0 84%;
+            transition: $dafaultTransition;
+
+            .homeSwapperBtn{
+
+                .btnWrapper{
+                    padding: 12px 6px;
+                    background-color: #F5F5F5;
+                    border-radius: $defaultBorderRadius;
+                    width: fit-content;
+                    margin-left: auto;
+
+                    a{
+                        text-decoration: none;
+                        color: #bcbcbc;
+                        padding: 6px 8px 8px 8px;
+                    }
+
+                    a:last-child{
+                        margin-left: 4px;
+                    }
+
+                    .activeBtn{
+                        box-shadow: 0px 0px 4px 4px rgba(213, 213, 213, 0.841);
+                        background-color: $defaultColor;
+                        color: #fff;
+                        border-radius: $defaultBorderRadius;
+                    }
+                }
+            }
+
+            .statisticsWrapper{
+
+                .statisTitle{
+                    margin: $defaultMargin 0px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h3{
+                        margin: 0px;
+                        color: $fontColor;
+                    }
+                    select{
+                        border: 1px solid rgb(224, 224, 224);
+                        padding: 6px 12px;
+                        border-radius: 20px;
+                        min-width: 180px;
+                    }
+                }
+                
+
+                .statisCardWrapper{
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    > div{
+                        flex: 0 0 22%;
+                    }
+                }
+
+                .sellersChartsWrapper{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    
+                    > div{
+                        margin-bottom: $defaultMargin;
+                    }
+
+                    .reviewChart,.incomeChart {
+                        flex: 0 0 55%;
+                    }
+
+                    .customerChartDoungnut, .failedSellChart {
+                        flex: 0 0 41%;
+
+                        canvas{
+                            height: 250px !important;
+                        }
+                    }
+
+
+                    .reviewChart{
+
+                        canvas{
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .mainContentContainerFull{
+            flex: 0 0 96%;
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:769px){
+    .sellersWrapper{
+        padding: 10px;
+    
+        .mainContentWrapper{
+
+            .mainContentContainer{
+                flex: 0 0 84%;
+                transition: $dafaultTransition;
+    
+                .statisticsWrapper{
+    
+                    .statisCardWrapper{
+    
+                        > div{
+                            flex: 0 0 47%;
+                            margin-bottom: 15px;
+                        }
+                    }
+    
+                    .sellersChartsWrapper{
+                        margin-top: 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        
+                        > div{
+                            margin-bottom: $defaultMargin;
+                        }
+    
+                        .reviewChart,.incomeChart {
+                            flex: 0 0 100%;
+                        }
+    
+                        .customerChartDoungnut, .failedSellChart {
+                            flex: 0 0 100%;
+    
+                            canvas{
+                                height: 200px !important;
+                            }
+                        }
+    
+    
+                        .reviewChart{
+    
+                            canvas{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+    
+    
+            }
+    
+            .mainContentContainerFull{
+                flex: 0 0 96%;
+            }
+        }
+    }
+}

@@ -1,0 +1,226 @@
+.salesCardWrapper{
+    background-color: #F3F8F6;
+    border-radius: 6px;
+
+    .cardContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px 8px 4px 8px;
+        text-transform: capitalize;
+        position: relative;
+    }
+
+    .leftSide{
+        flex: 0 0 50%;
+
+        .leftSideContent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .leftIcon{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: #C6E9D6;
+                text-align: center;
+                position: relative;
+                svg{
+                    position: absolute;
+                    left: 2.5px;
+                    top: 2px;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    color: #000;
+                    font-size: 20px;
+                }
+            }
+        
+            .cardInfo{
+                p{
+                    margin: 0px;
+                }
+
+                p:first-child{
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 2px;
+                }
+    
+                p:last-child{
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+            }
+
+            
+        }
+    }
+
+    .rightSide{
+        flex: 0 0 50%;
+
+        .rightSideContent{
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            p{
+                margin: 0px;
+            }
+
+            .icon{
+                text-align: center;
+                flex: 0 0 100%;
+                img{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+
+                svg{
+                    color: #35BD72;
+                    // font-size: 20px;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+
+            .cardPercent{
+                width: fit-content;
+                margin-left: auto;
+                text-align: right;
+                margin-top: 25px;
+                background-color: #fff;
+                border-radius: 6px;
+                padding: 2px 3px;
+
+                p{
+                    text-transform: capitalize;
+                    font-size: 10px;
+                    color: #555;
+                    span{
+                        margin-right: 2px;
+                    }
+                }
+
+                .down{
+                    color: #FF2623;
+                }
+        
+                .up{
+                    color: #0FB258;
+                }
+            }
+
+            
+        
+            
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:769px){
+    .salesCardWrapper{
+
+        .cardContainer{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 10px 4px 4px 4px;
+            text-transform: capitalize;
+            position: relative;
+        }
+    
+        .leftSide{
+            flex: 0 0 50%;
+    
+            .leftSideContent{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-start;
+
+                > div{
+                    flex: 0 0 100%;
+                    text-align: center;
+                }
+            
+                .cardInfo{
+                    p{
+                        margin: 0px;
+                    }
+    
+                    p:first-child{
+                        font-size: 14px;
+                    }
+        
+                    p:last-child{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+    
+                
+            }
+        }
+    
+        .rightSide{
+            flex: 0 0 50%;
+    
+            .rightSideContent{
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+    
+                p{
+                    margin: 0px;
+                }
+    
+                .icon{
+                    text-align: center;
+                    flex: 0 0 100%;
+                    img{
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                    }
+    
+                    svg{
+                        color: #35BD72;
+                        // font-size: 20px;
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+    
+                .cardPercent{
+                    width: fit-content;
+                    margin-left: auto;
+                    text-align: right;
+                    margin-top: 25px;
+                    background-color: #fff;
+                    border-radius: 6px;
+                    padding: 2px 3px;
+    
+                    p{
+                        text-transform: capitalize;
+                        font-size: 9px;
+                        color: #555;
+                        span{
+                            color: #35BD72;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+    
+                
+            
+                
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,109 @@
+.bottomChartWrapper{
+
+    .bottomLeft{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .totalProductChart{
+            flex: 0 0 48.5%;
+
+            canvas{
+                text-align: left !important;
+                background-color: #FCFCFC;
+            }
+        }
+
+        .customerChart{
+            flex: 0 0 48.5%;
+
+            canvas{
+                text-align: left !important;
+                background-color: #FCFCFC;
+            }
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:769px){
+    .bottomChartWrapper{
+
+        .bottomLeft{
+            .totalProductChart{
+                flex: 0 0 100%;
+                margin-bottom: 15px;
+    
+                canvas{
+                    width: 70% !important;
+                    margin: auto;
+                    height: 200px !important;
+                }
+            }
+    
+            .customerChart{
+                flex: 0 0 100%;
+    
+                canvas{
+                    width: 70% !important;
+                    margin: auto;
+                    height: 200px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:500px) and (max-width:769px){
+    .bottomChartWrapper{
+
+        .bottomLeft{
+            .totalProductChart{
+
+                canvas{
+                    width: 350px !important;
+                    margin: auto;
+                    height: 220px !important;
+                }
+            }
+    
+            .customerChart{
+                flex: 0 0 100%;
+    
+                canvas{
+                    width: 350px !important;
+                    margin: auto;
+                    height: 220px !important;
+                }
+            }
+        }
+    }
+}
+
+// @media (min-width:769.5px) and (max-width:1150px){
+//     .bottomChartWrapper{
+
+//         .bottomLeft{
+//             .totalProductChart{
+//                 flex: 0 0 100%;
+//                 margin-bottom: 15px;
+    
+//                 canvas{
+//                     width: 70% !important;
+//                     margin: auto;
+//                     height: 200px !important;
+//                 }
+//             }
+    
+//             .customerChart{
+//                 flex: 0 0 100%;
+    
+//                 canvas{
+//                     width: 70% !important;
+//                     margin: auto;
+//                     height: 200px !important;
+//                 }
+//             }
+//         }
+//     }
+// }

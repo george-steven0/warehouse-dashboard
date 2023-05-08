@@ -1,0 +1,105 @@
+.chartsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .topSide{
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start ;
+
+        .topLeftSide{
+            flex:0 0 48.5%;
+        }
+
+        .topRightSide{
+            flex: 0 0 49.5%;
+        }
+    }
+
+    .bottomSide{
+        flex: 0 0 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start ;
+
+        .bottomLeft{
+            flex: 0 0 48.5%;
+        }
+
+        .bottomRight{
+            flex: 0 0 49.5%;
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:769px){
+    .chartsWrapper{
+        justify-content: flex-start;
+    
+        .topSide{
+            flex: 0 0 100%;
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start ;
+    
+            .topLeftSide{
+                flex:0 0 100%;
+                margin-bottom: 20px;
+            }
+    
+            .topRightSide{
+                flex: 0 0 100%;
+            }
+        }
+    
+        .bottomSide{
+            flex: 0 0 100%;
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start ;
+    
+            .bottomLeft{
+                flex: 0 0 100%;
+            }
+    
+            .bottomRight{
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
+
+@media (min-width:769.5px) and (max-width:1150px){
+    .chartsWrapper{
+    
+    
+        .bottomSide{
+            flex: 0 0 100%;
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start ;
+    
+            .bottomLeft{
+                flex: 0 0 100%;
+                margin-bottom: 15px;
+            }
+    
+            .bottomRight{
+                flex: 0 0 100%;
+            }
+        }
+    }
+}

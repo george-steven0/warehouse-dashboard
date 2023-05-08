@@ -1,0 +1,255 @@
+/* Sass */
+$defaultMargin : 15px;
+$defaultBorderRadius : 12px ;
+$defaultColor : #2A85FF;
+$dafaultTransition : all .3s ease-in-out;
+$fontColor : #555;
+/* Sass */
+
+.reportDetailsWrapper{
+    padding: 10px;
+
+    .mainContentWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .sideNav{
+            flex: 0 0 15%;
+            max-width: 15%;
+            transition: $dafaultTransition;
+            height: 100vh;
+        }
+
+        .miniSideNav{
+            overflow: hidden;
+            max-width: 37px;
+            flex: 0 0 3%;
+            text-align: center;
+
+            ul{
+                li{
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .mainContentContainer{
+            flex: 0 0 84%;
+            transition: $dafaultTransition;
+
+            .reportTabs{
+
+                .tableBtn{
+                    
+                    button{
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        margin-right: 8px;
+                        padding: 4px 6px;
+                        font-size: 18px;
+                        background-color: #F5F5F5;
+                    }
+                    
+            
+                    button:nth-child(2){
+                        color: #FE1F1F;
+                    }
+                }
+
+                .tableSearchInput{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin: 20px 0px;
+
+                    input{
+                        width: 400px;
+                        background-color: #F8F8F8;
+                        border: none;
+
+                        &:focus{
+                            background-color: #fff;
+                        }
+                    }
+
+                    p{
+                        font-size: 18px;
+                        margin-right: 20px;
+                    }
+                }
+                header{
+                    display: none !important;
+                }
+
+                .tabListContainer{
+                    
+                    > div{
+                        >div{
+                            justify-content: space-between !important;
+                        }
+                    }
+
+
+
+                }
+
+                .dataTableComponentWrapper{
+
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+
+            
+        }
+
+        .mainContentContainerFull{
+            flex: 0 0 96%;
+        }
+    }
+}
+
+
+@media (min-width:200px) and (max-width:1150px){
+    .reportDetailsWrapper{
+        padding: 10px;
+    
+        .mainContentWrapper{
+            flex-wrap: nowrap;
+            .mainContentContainer{
+                flex: 0 0 84%;
+                transition: $dafaultTransition;
+    
+                .reportTabs{
+                    width: 335px;
+                    .tableBtn{
+                        
+                        button{
+                            background-color: transparent;
+                            border: none;
+                            cursor: pointer;
+                            margin-right: 8px;
+                            padding: 4px 6px;
+                            font-size: 18px;
+                            background-color: #F5F5F5;
+                        }
+                        
+                
+                        button:nth-child(2){
+                            color: #FE1F1F;
+                        }
+                    }
+    
+                    .tableSearchInput{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        margin: 20px 0px;
+    
+                        input{
+                            width: 190px;
+                            background-color: #F8F8F8;
+                            border: none;
+    
+                            &:focus{
+                                background-color: #fff;
+                            }
+                        }
+    
+                        p{
+                            font-size: 16px;
+                            margin-right: 20px;
+                        }
+                    }
+                    header{
+                        display: none !important;
+                    }
+    
+                    .tabListContainer{
+                        
+                        > div{
+                            >div{
+                                justify-content: space-between !important;
+                            }
+                        }
+    
+    
+    
+                    }
+    
+                    .dataTableComponentWrapper{
+    
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+    
+                
+            }
+    
+            .mainContentContainerFull{
+                flex: 0 0 96%;
+            }
+        }
+    }
+}
+
+@media (min-width:400px) and (max-width:590px){
+    .reportDetailsWrapper{
+    
+        .mainContentWrapper{
+            flex-wrap: nowrap;
+            .mainContentContainer{
+    
+                .reportTabs{
+                    width: 435px;
+                }
+    
+                
+            }
+        }
+    }
+}
+
+@media (min-width:590px) and (max-width:670px){
+    .reportDetailsWrapper{
+    
+        .mainContentWrapper{
+            flex-wrap: nowrap;
+            .mainContentContainer{
+    
+                .reportTabs{
+                    width: 535px;
+                }
+    
+                
+            }
+        }
+    }
+}
+
+@media (min-width:670px) and (max-width:1150px){
+    .reportDetailsWrapper{
+    
+        .mainContentWrapper{
+            flex-wrap: nowrap;
+            .mainContentContainer{
+    
+                .reportTabs{
+                    width: 95%;
+                }
+    
+                
+            }
+        }
+    }
+}

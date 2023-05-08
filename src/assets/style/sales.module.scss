@@ -1,0 +1,229 @@
+/* Sass */
+$defaultMargin : 15px;
+$defaultBorderRadius : 12px ;
+$defaultColor : #2A85FF;
+$dafaultTransition : all .3s ease-in-out;
+$fontColor : #555;
+/* Sass */
+
+.salesWrapper{
+    padding: 10px;
+
+    .mainContentWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .sideNav{
+            flex: 0 0 15%;
+            max-width: 15%;
+            transition: $dafaultTransition;
+            height: 100%;
+        }
+
+        .miniSideNav{
+            overflow: hidden;
+            max-width: 37px;
+            flex: 0 0 3%;
+            text-align: center;
+            
+            ul{
+                li{
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .mainContentContainer{
+            flex: 0 0 84%;
+            transition: $dafaultTransition;
+
+            .homeSwapperBtn{
+
+                .btnWrapper{
+                    padding: 12px 6px;
+                    background-color: #F5F5F5;
+                    border-radius: $defaultBorderRadius;
+                    width: fit-content;
+                    margin-left: auto;
+
+                    a{
+                        text-decoration: none;
+                        color: #bcbcbc;
+                        padding: 6px 8px 8px 8px;
+                    }
+
+                    a:last-child{
+                        margin-left: 4px;
+                    }
+
+                    .activeBtn{
+                        box-shadow: 0px 0px 4px 4px rgba(213, 213, 213, 0.841);
+                        background-color: $defaultColor;
+                        color: #fff;
+                        border-radius: $defaultBorderRadius;
+                    }
+                }
+            }
+
+            .salesStatisticsWrapper{
+                width: 98.5%;
+                margin: auto;
+                margin-top: $defaultMargin;
+
+                .title{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-transform: capitalize;
+
+                    h3{
+                        font-size: 25px;
+                        margin: 0px;
+                        color: #555;
+                    }
+
+                    div {
+                        select{
+                            border: 1px solid rgb(224, 224, 224);
+                            padding: 6px 12px;
+                            border-radius: 20px;
+                            min-width: 180px;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+
+                .salesStatisticsCard{
+                    margin-top: 25px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    > div{
+                        flex: 0 0 22%;
+                    }
+                }
+
+                .salesOverViewWrapper{
+                    margin-top: $defaultMargin;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: space-between;
+
+                    .topSelling, .customers{
+                        flex: 0 0 48%;
+                    }
+                }
+
+                .storeSales{
+                    width: 100%;
+                    margin-top: $defaultMargin;
+                    background-color: #fcfcfc;
+                }
+            }
+
+        }
+
+        .mainContentContainerFull{
+            flex: 0 0 96%;
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:1150px){
+    .salesWrapper{
+    
+        .mainContentWrapper{
+    
+            .mainContentContainer{
+    
+                .salesStatisticsWrapper{
+    
+                    .title{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-transform: capitalize;
+                        margin-top: 20px;
+    
+                        h3{
+                            font-size: 18px;
+                            margin: 0px;
+                            color: #555;
+                        }
+    
+                        div {
+                            
+                            select{
+                                border: 1px solid rgb(224, 224, 224);
+                                padding: 6px 12px;
+                                border-radius: 20px;
+                                min-width: 160px;
+                            }
+                        }
+                    }
+    
+                    .salesStatisticsCard{
+                        margin-top: 25px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-evenly;
+    
+                        > div{
+                            flex: 0 0 47%;
+                            margin-bottom: 15px;
+                        }
+                    }
+    
+                    .salesOverViewWrapper{
+    
+                        .topSelling, .customers{
+                            flex: 0 0 100%;
+                        }
+                    }
+    
+                    .storeSales{
+                        width: 335px !important;
+                        margin-top: $defaultMargin;
+                        background-color: #fcfcfc;
+                    }
+                }
+    
+            }
+    
+            .mainContentContainerFull{
+                flex: 0 0 96%;
+            }
+        }
+    }
+}
+
+@media (min-width:769.5px) and (max-width:1150px){
+    .salesWrapper{
+    
+        .mainContentWrapper{
+    
+            .mainContentContainer{
+    
+                .salesStatisticsWrapper{
+    
+                    .storeSales{
+                        width: 100% !important;
+                        margin-top: $defaultMargin;
+                        background-color: #fcfcfc;
+                    }
+                }
+    
+            }
+    
+            .mainContentContainerFull{
+                flex: 0 0 96%;
+            }
+        }
+    }
+}

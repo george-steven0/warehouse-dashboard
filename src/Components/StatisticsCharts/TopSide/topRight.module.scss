@@ -1,0 +1,93 @@
+/* Sass */
+$defaultMargin : 15px;
+$defaultBorderRadius : 6px ;
+$defaultColor : #2A85FF;
+$dafaultTransition : all .3s ease-in-out;
+$fontColor : #555;
+/* Sass */
+
+
+.topRightWrapper{
+
+    .topRightChart{
+        text-align: right;
+        select{
+            border: 1px solid rgb(224, 224, 224);
+            padding: 6px 12px;
+            border-radius: 20px;
+            min-width: 180px;
+            margin-bottom: 5px;
+        }
+        
+        .lineChart{
+            width: 100% !important;
+            height: 220px !important;
+            background-color: #FCFCFC;
+            padding: 8px 10px;
+        }
+
+
+    }
+
+    .topRightChartv2{
+        margin-top: 10px;
+        text-align: right;
+        select{
+            border: 1px solid rgb(224, 224, 224);
+            padding: 6px 12px;
+            border-radius: 20px;
+            min-width: 180px;
+        }
+
+        .lineChart{
+            width: 100% !important;
+            height: 220px !important;
+            background-color: #FCFCFC;
+            padding: 8px 10px;
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:769px){
+    .topRightWrapper{
+
+        .topRightChart{
+            
+            .lineChart{
+                width: 100% !important;
+                height: 200px !important;
+            }
+        }
+    
+        .topRightChartv2{
+            margin-top: $defaultMargin;
+    
+            .lineChart{
+                width: 100% !important;
+                height: 200px !important;    
+            }
+        }
+    }
+}
+
+@media (min-width:769.5px) and (max-width:1150px){
+    .topRightWrapper{
+
+        .topRightChart{
+            
+            .lineChart{
+                width: 100% !important;
+                height: 150px !important;
+            }
+        }
+    
+        .topRightChartv2{
+            margin-top: 22px;
+    
+            .lineChart{
+                width: 100% !important;
+                height: 200px !important;    
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+.bottomRightWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .latestAddedWrapper{
+        flex: 0 0 54%;
+        padding: 4px;
+        background-color: #fcfcfc;
+        padding: 8px 6px;
+
+        .title{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            p{
+                font-size: 11px;
+                margin: 0px;
+                font-weight: 900;
+            }
+
+            div{
+                text-align: right;
+
+                input{
+                    width: 85%;
+                    border: 1px solid #eee;
+                    padding: 4px 10px;
+                    border-radius: 25px;
+                }
+            }
+
+            
+        }
+
+        .latestTableWrapper{
+            margin-top: 15px;
+
+            .latestTableTitle{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #eee;
+
+                p{
+                    margin: 0px;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+
+            .latestTableContent{
+                display: flex;
+                flex-wrap: wrap;
+                max-height: 200px;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar{
+                    width: 2px;
+                }
+                
+                > div{
+                    flex: 0 0 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 20px 0px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #eee;
+
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+
+                    p{
+                        margin: 0px;
+                    }
+                }
+            }
+
+            .seeMoreBtn{
+                text-align: right;
+                padding: 8px 4px;
+                color: #555;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .topCountryWrapper{
+        flex: 0 0 45%;
+        background-color: #fcfcfc;
+        padding: 8px 4px 14px 4px;
+
+        rect{
+            fill: #fcfcfc !important;
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:769px){
+    .bottomRightWrapper{
+        margin-top: 25px;
+
+        .latestAddedWrapper{
+            flex: 0 0 100%;
+    
+            .title{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+    
+                p{ 
+                    flex: 0 0 45%;
+                    font-size: 14px;
+                    margin-right: 10px;
+                    font-weight: 900;
+                }
+    
+                div{
+                    flex: 0 0 48%;
+                    text-align: right;
+    
+                    input{
+                        width: 100%;
+                        border: 1px solid #eee;
+                        padding: 4px 10px;
+                        border-radius: 25px;
+                    }
+                }
+    
+                
+            }
+    
+            .latestTableWrapper{
+                margin-top: 15px;
+    
+                .latestTableTitle{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #eee;
+    
+                    p{
+                        margin: 0px;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                }
+    
+                .latestTableContent{
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-height: 200px;
+                    overflow-y: scroll;
+    
+                    &::-webkit-scrollbar{
+                        width: 2px;
+                    }
+                    
+                    > div{
+                        flex: 0 0 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 20px 0px;
+                        padding-bottom: 8px;
+                        border-bottom: 1px solid #eee;
+    
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+    
+                        p{
+                            margin: 0px;
+                        }
+                    }
+                }
+    
+                .seeMoreBtn{
+                    text-align: right;
+                    padding: 8px 4px;
+                    color: #555;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    
+        .topCountryWrapper{
+            margin-top: 15px;
+            flex: 0 0 100%;
+            background-color: #fcfcfc;
+    
+            rect{
+                fill: #fcfcfc !important;
+            }
+        }
+    }
+}

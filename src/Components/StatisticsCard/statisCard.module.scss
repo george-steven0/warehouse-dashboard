@@ -1,0 +1,73 @@
+/* Sass */
+$defaultColor : #2A85FF;
+$dafaultTransition : all .3s ease-in-out;
+/* Sass */
+
+.cardWrapper{
+    background-color: #fff;
+    box-shadow: 1px 1px 7px 0px transparent,
+                1px 1px 7px 2px rgba(181, 181, 181, 0.541);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 4px;
+    border-radius: 6px;
+    min-height: 70px;
+
+    p{
+        margin: 0px;
+    }
+    p:first-child{
+        margin-left: auto;
+        flex: 0 0 100%;
+
+        > span{
+            margin-left: auto;
+            display: block;
+            width: fit-content;
+            font-size: 12px;
+            padding: 2px 4px;
+            border-radius: 6px;
+
+            span:first-child{
+                margin-right: 5px;
+            }
+        }
+
+        .down{
+            background-color: #FDE6D9;
+            color: #FF2623;
+        }
+
+        .up{
+            background-color: #BDEFD4;
+            color: #0FB258;
+        }
+    }
+
+    p:last-child{
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        span{
+            margin-right: 6px;
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 600;
+            color: #555;
+
+            svg{
+                font-size: 18px;
+            }
+        }
+
+        span:last-child{
+            color: $defaultColor;
+        }
+    }
+}

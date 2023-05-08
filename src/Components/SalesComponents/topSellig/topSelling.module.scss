@@ -1,0 +1,85 @@
+.topSellingWrapper{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    padding: 8px 10px;
+
+    .title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: capitalize;
+
+        h3{
+            color: #555;
+        }
+
+        div{
+
+            select{
+                border: 1px solid #eee;
+                padding: 4px 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .topSellingTable{
+        color: #555;
+
+        .latestTableTitle{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .tableContent{
+            max-height: 150px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar{
+                width: 2px;
+            }
+
+            .tableCard{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                font-size: 14px;
+                text-align: left;
+                padding: 8px 0px;
+                border-top: 1px solid rgb(219, 219, 219);
+            
+    
+                > div{
+                    flex: 0 0 23%;
+    
+                    p{
+                        span.numSpan{
+                            display: inline-block;
+                            padding: 2px;
+                            width: 20px;
+                            height: 20px;
+                            line-height: 16px;
+                            border-radius: 4px;
+                            text-align: center;
+                            vertical-align: middle;
+                            background-color: #FFBC99;
+                            margin-right: 5px;
+                            font-weight: 600;
+                        }
+    
+                        span.numPercent{
+                            font-size: 10px;
+                            color: #0FB258;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

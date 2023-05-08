@@ -1,0 +1,23 @@
+.sellCardWrapper{
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    color: #555;
+    box-shadow: 15px 15px 10px -15px rgba(172, 172, 172, 0.76); 
+    transition: all .3s ease-in-out;
+    cursor: alias;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.reviewStar{
+    color: #FCEC59;
+}

@@ -1,0 +1,212 @@
+/* Sass */
+$defaultMargin : 20px;
+$defaultBorderRadius : 6px ;
+$defaultColor : #2A85FF;
+$dafaultTransition : all .3s ease-in-out;
+
+/* Sass */
+
+.topNavWrapper{
+    margin-bottom: $defaultMargin;
+
+    .topNavContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .leftSide{
+
+            .logoSearchWrapper{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                > div{
+                    
+                    input{
+                        padding: 8px 4px !important;
+                        width: 300px;
+                    }
+                }
+
+                > div:first-child{
+                    margin-right: $defaultMargin;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                > div:last-child{
+                    .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
+                        padding-left: 4px;
+                    }
+                }
+            }
+        }
+
+        .rightSide{
+
+            .navProfileWrapper{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                > ul{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+
+                    li{
+                        margin-left: 25px;
+
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+    
+                        button{
+                            background-color: $defaultColor;
+                            color: #fff;
+                            padding: 8px 12px;
+                            border: none;
+                            border-radius: $defaultBorderRadius;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            transition: $dafaultTransition;
+
+                            &:hover{
+                                background-color: #61a6ff;
+                            }
+
+                            span:first-child{
+                                margin-right: 5px;
+                                font-weight: 900;
+                                
+                                svg{
+                                    color: #fff;
+                                }
+                            }
+    
+                            span:last-child{
+                                font-weight: 100;
+                            }
+                        }
+
+                        span{
+                            
+                            svg{
+                                font-size: 20px;
+                                color: rgb(149, 149, 149);
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:769px){
+    .topNavWrapper{
+        margin-top: 25px;
+    
+        .topNavContainer{
+    
+            .leftSide{
+                flex: 0 0 100%;
+                .logoSearchWrapper{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+    
+                    > div{
+                        
+                        input{
+                            padding: 8px 4px !important;
+                            width: 200px;
+                        }
+                    }
+    
+                    > div:first-child{
+                        margin-right: $defaultMargin;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+    
+                    > div:last-child{
+                        .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
+                            padding-left: 4px;
+                        }
+                    }
+                }
+            }
+    
+            .rightSide{
+                flex: 0 0 100%;
+                margin-top: 15px;
+                text-align: center;
+
+                .navProfileWrapper{
+    
+                    > ul{
+                        justify-content: space-between;
+                        width: 90%;
+
+                        li{
+                            margin-left: 25px;
+    
+                            img{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                            }
+        
+                            button{
+                                background-color: $defaultColor;
+                                color: #fff;
+                                padding: 8px 12px;
+                                border: none;
+                                border-radius: $defaultBorderRadius;
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                font-size: 14px;
+                                transition: $dafaultTransition;
+    
+                                &:hover{
+                                    background-color: #61a6ff;
+                                }
+    
+                                span:first-child{
+                                    margin-right: 5px;
+                                    font-weight: 900;
+                                    
+                                    svg{
+                                        color: #fff;
+                                    }
+                                }
+        
+                                span:last-child{
+                                    font-weight: 100;
+                                }
+                            }
+    
+                            span{
+                                
+                                svg{
+                                    font-size: 20px;
+                                    color: rgb(149, 149, 149);
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

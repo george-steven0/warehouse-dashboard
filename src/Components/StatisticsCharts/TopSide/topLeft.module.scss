@@ -1,0 +1,122 @@
+/* Sass */
+$defaultMargin : 15px;
+$defaultBorderRadius : 6px ;
+$defaultColor : #2A85FF;
+$dafaultTransition : all .3s ease-in-out;
+$fontColor : #555;
+/* Sass */
+
+
+.topLeftChartWrapper{
+
+    .overViewWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .overViewCard{
+            flex: 0 0 24%;
+            text-align: center;
+            padding: 12px 2px;
+            border-radius: $defaultBorderRadius;
+
+            p{
+                margin: 0px;
+                line-height: 1.4;
+                color: #555;
+                font-weight: 400;
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+        }
+
+        .overViewCard:first-child{
+            background-color: #F5F5F5;
+        }
+
+        .overViewCard:nth-child(2){
+            background-color: #F1F8F4;
+        }
+
+        .overViewCard:nth-child(3){
+            background-color: #FDE9E9;
+        }
+
+        .overViewCard:nth-child(4){
+            background-color: #FAF5C2;
+        }
+    }
+
+    .reportChart{
+        .reportTitle{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            h3{
+                flex: 0 0 40% !important;
+            }
+
+            select{
+                border: 1px solid rgb(224, 224, 224);
+                padding: 6px 12px;
+                border-radius: 20px;
+                min-width: 180px;
+            }
+        }
+        canvas{
+            width: 100% !important;
+            min-height: 300px !important;
+            background-color: #FCFCFC;
+            padding: 8px 10px;
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:769px){
+    .topLeftChartWrapper{
+
+        .overViewWrapper{
+    
+            .overViewCard{
+                flex: 0 0 47%;
+                margin-bottom: 15px;
+            }
+
+        }
+    
+        .reportChart{
+    
+            canvas{
+                width: 100% !important;
+                height: 200px !important;
+                min-height: 200px !important;
+            }
+        }
+    }
+}
+
+@media (min-width:769.5px) and (max-width:1150px){
+    .topLeftChartWrapper{
+
+        .overViewWrapper{
+    
+            .overViewCard{
+                flex: 0 0 47%;
+                margin-bottom: 15px;
+            }
+
+        }
+    
+        .reportChart{
+    
+            canvas{
+                width: 100% !important;
+                height: 150px !important;
+                min-height: 150px !important;
+            }
+        }
+    }
+}

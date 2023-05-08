@@ -1,0 +1,444 @@
+/* Sass */
+$defaultMargin : 15px;
+$defaultBorderRadius : 12px ;
+$defaultColor : #2A85FF;
+$dafaultTransition : all .3s ease-in-out;
+$fontColor : #555;
+/* Sass */
+
+.sellersInfoWrapper{
+    padding: 10px;
+
+    .mainContentWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .sideNav{
+            flex: 0 0 15%;
+            max-width: 15%;
+            transition: $dafaultTransition;
+            height: 100%;
+        }
+
+        .miniSideNav{
+            overflow: hidden;
+            max-width: 37px;
+            flex: 0 0 3%;
+            text-align: center;
+            
+            ul{
+                li{
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .mainContentContainer{
+            flex: 0 0 84%;
+            transition: $dafaultTransition;
+
+            .homeSwapperBtn{
+
+                .btnWrapper{
+                    padding: 12px 6px;
+                    background-color: #F5F5F5;
+                    border-radius: $defaultBorderRadius;
+                    width: fit-content;
+                    margin-left: auto;
+
+                    a{
+                        text-decoration: none;
+                        color: #bcbcbc;
+                        padding: 6px 8px 8px 8px;
+                    }
+
+                    a:last-child{
+                        margin-left: 4px;
+                    }
+
+                    .activeBtn{
+                        box-shadow: 0px 0px 4px 4px rgba(213, 213, 213, 0.841);
+                        background-color: $defaultColor;
+                        color: #fff;
+                        border-radius: $defaultBorderRadius;
+                    }
+                }
+            }
+
+            .sellerWrapper{
+                width: 99%;
+
+                .title{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 70%;
+
+                    h3{
+                        margin: 0px;
+                        color: $fontColor;
+                        width: fit-content;
+                    }
+                    
+                    select{
+                        padding: 4px 10px;
+                        color: #555;
+                        border-radius: 10px;
+                        border: 1px solid #eee;
+                        width: 160px;
+                    }
+
+                }
+
+                .sellersBtnWrapper{
+                    margin-top: $defaultMargin;
+                    border-radius: 4px;
+                    width: 70%;
+                    padding: 2px;
+                    background-color: #F4F4F4;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    button{
+                        background-color: transparent;
+                        border: none;
+                        padding: 12px 15px;
+                        color: rgb(137, 137, 137);
+                        border-radius: 8px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-transform: capitalize;
+
+
+                        span{
+                            color: #000;
+                            font-weight: 400;
+                            font-size: 20px;
+                        }
+
+                        span:first-child{
+                            margin-right: 7px;
+                        }
+
+                        span:last-child{
+                            margin-left: 15px;
+                        }
+
+                    }
+
+                    
+                    .sellersactiveBtn{
+                        background-color: rgba(255, 255, 255, 0.856);
+                        box-shadow: -2px 3px 7px 1px rgba(143, 143, 143, 0.766);
+                    }
+                }
+                
+
+            }
+
+            .tableSellersWrapper{
+                width: 99%;
+                margin-top: 25px;
+
+                .tableBtn{
+                    
+                    button{
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        margin-right: 8px;
+                        padding: 4px 6px;
+                        font-size: 18px;
+                        background-color: #F5F5F5;
+                    }
+                    
+            
+                    button:nth-child(2){
+                        color: #FE1F1F;
+                    }
+                }
+                header{
+                    display: none !important;
+                }
+
+                .tableSearchInput{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin: 20px 0px;
+
+                    input{
+                        width: 400px;
+                        background-color: #F8F8F8;
+                        border: none;
+
+                        &:focus{
+                            background-color: #fff;
+                        }
+                    }
+
+                    p{
+                        font-size: 18px;
+                        margin-right: 20px;
+                    }
+                }
+
+                .tableLink{
+                    color: #000 !important;
+                    text-decoration: none !important;
+                    transition: $dafaultTransition;
+                    font-weight: 500;
+
+                    &:hover{
+                        color: $defaultColor !important;
+                    }
+                }
+
+                .tableReview{
+                    display: flex;
+                    align-items: center;
+
+                    .icons{
+                        margin-right: 5px;
+                    }
+                    .iconText{
+                        color: #555;
+                    }
+                }
+
+                //Switch Btn Inside Table
+                .switchBtn{
+                    color: #555;
+
+                    .switch {
+                        position: relative;
+                        display: inline-block;
+                        width: 40px;
+                        height: 20px;
+                        margin: 0px 5px;
+    
+                        input { 
+                            opacity: 0;
+                            width: 0;
+                            height: 0;
+                            cursor: auto !important;
+                        }
+    
+                        .slider {
+                            position: absolute;
+                            cursor: auto !important;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: #ccc;
+                            -webkit-transition: .4s;
+                            transition: .4s;
+                        }
+    
+                        .slider:before {
+                            position: absolute;
+                            content: "";
+                            height: 16px;
+                            width: 16px;
+                            left: 2px;
+                            bottom: 2.5px;
+                            background-color: white;
+                            -webkit-transition: .4s;
+                            transition: .4s;
+                        }
+    
+                        input:checked + .slider {
+                            background-color: #2196F3;
+                        }
+                        
+                        input:focus + .slider {
+                            box-shadow: 0 0 1px #2196F3;
+                        }
+                        
+                        input:checked + .slider:before {
+                            transform: translateX(20px);
+                        }
+    
+                        .round {
+                            border-radius: 34px;
+                        }
+                        .round:before {
+                            border-radius: 50%;
+                        }
+                        
+                    }
+                }
+                
+            }
+
+
+        }
+
+        .mainContentContainerFull{
+            flex: 0 0 96%;
+        }
+    }
+}
+
+@media (min-width:200px) and (max-width:1150px){
+    .sellersInfoWrapper{
+    
+        .mainContentWrapper{
+    
+            .mainContentContainer{
+                flex: 0 0 84%;
+                transition: $dafaultTransition;
+    
+                .sellerWrapper{
+                    width: 99%;
+    
+                    .title{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+    
+                        h3{
+                            margin: 0px;
+                            color: $fontColor;
+                            width: fit-content;
+                        }
+                        
+                        select{
+                            padding: 4px 10px;
+                            color: #555;
+                            border-radius: 10px;
+                            border: 1px solid #eee;
+                            width: 120px;
+                        }
+    
+                    }
+    
+                    .sellersBtnWrapper{
+                        width: 100%;
+                        padding: 2px;
+                        background-color: #F4F4F4;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-evenly;
+    
+                        button{
+                            flex: 0 0 47%;
+                            margin-bottom: 15px;
+
+                        }
+                    }
+                    
+    
+                }
+    
+                .tableSellersWrapper{
+                    width: 335px;
+                    margin-top: 25px;
+    
+                    .tableBtn{
+                        
+                        button{
+                            background-color: transparent;
+                            border: none;
+                            cursor: pointer;
+                            margin-right: 8px;
+                            padding: 4px 6px;
+                            font-size: 18px;
+                            background-color: #F5F5F5;
+                        }
+                        
+                
+                        button:nth-child(2){
+                            color: #FE1F1F;
+                        }
+                    }
+                    header{
+                        display: none !important;
+                    }
+    
+                    .tableSearchInput{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        margin: 20px 0px;
+    
+                        input{
+                            width: 170px;
+                        }
+    
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+    
+                }
+    
+    
+            }
+    
+        }
+    }
+}
+
+@media (min-width:470px) and (max-width:650px){
+    .sellersInfoWrapper{
+    
+        .mainContentWrapper{
+    
+            .mainContentContainer{
+    
+                .tableSellersWrapper{
+                    width: 435px;
+                    margin-top: 25px;
+    
+                }
+    
+    
+            }
+    
+        }
+    }
+}
+
+@media (min-width:650.5px) and (max-width:1150px){
+    .sellersInfoWrapper{
+    
+        .mainContentWrapper{
+            flex-wrap: nowrap;
+            .mainContentContainer{
+                margin-left: 15px;
+                .sellerWrapper{
+                    width: 99%;
+    
+                    .sellersBtnWrapper{
+                        width: 80%;
+    
+                        button{
+                            flex: 0 0 31%;
+                        }
+                    }
+                    
+    
+                }
+    
+                .tableSellersWrapper{
+                    width: 100%;    
+                }
+    
+    
+            }
+    
+        }
+    }
+}
